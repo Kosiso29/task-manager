@@ -1,0 +1,14 @@
+.add-item-block {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5%;
+    align-items: center;
+
+    .add-item-block-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        max-width: 11rem;
+    }
+}

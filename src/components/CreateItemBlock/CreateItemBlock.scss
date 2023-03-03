@@ -1,0 +1,72 @@
+.create-item-block {
+    display: flex;
+    flex-direction: column;
+
+    & > .add-item-block {
+        padding: 1.5rem;
+    }
+
+    .progress-bar-container {
+        width: 80%;
+    }
+
+    .add-item-progress-bar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list-group {
+        margin-top: 1.5rem;
+    }
+
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        border: none;
+
+        &:hover {
+            background-color: rgb(209, 231, 221);
+
+            svg {
+                visibility: visible;
+            }
+        }
+
+        .checkbox-text {
+            display: flex;
+            column-gap: .2em;
+
+            svg {
+                cursor: move;
+            }
+        }
+
+        .add-item-block {
+            flex: 1 0 90%;
+        }
+
+        .edit-delete {
+            display: flex;
+            column-gap: .2em;
+
+            svg {
+                &:nth-child(1) {
+                    fill: rgb(13,110,253);
+                }
+
+                &:nth-child(2) {
+                    fill: palevioletred;
+                }
+            }
+        }
+
+        svg {
+            cursor: pointer;
+            visibility: hidden;
+        }
+    }
+}

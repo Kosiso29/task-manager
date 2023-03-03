@@ -1,0 +1,39 @@
+.create-user-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    select {
+        cursor: pointer;
+    }
+
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        border: none;
+
+        &:hover {
+            background-color: rgb(209, 231, 221);
+
+            svg {
+                visibility: visible;
+            }
+        }
+
+        .edit-delete {
+            display: flex;
+            column-gap: .2em;
+
+            svg {
+                fill: palevioletred;
+            }
+        }
+
+        svg {
+            cursor: pointer;
+            visibility: hidden;
+        }
+    }
+}
